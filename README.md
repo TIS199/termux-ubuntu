@@ -14,7 +14,7 @@ A script to install Ubuntu in Termux, making it easy to run a full Ubuntu enviro
 - **Termux**: Ensure you have Termux installed on your Android device. You can download it from [Google Play](https://play.google.com/store/apps/details?id=com.termux) or [F-Droid](https://f-droid.org/packages/com.termux/).
 - **Sufficient Storage**: Make sure your device has enough storage space for the Ubuntu root filesystem.
 - **Internet Access**: The script downloads the necessary files from the internet, so a stable connection is required.
-- **Curl Installed**: You need *curl* installed in termux to use the script.
+- **Wget Installed**: You need *wget* installed in termux to use the script.
    
 ## Installation
 
@@ -23,8 +23,8 @@ A script to install Ubuntu in Termux, making it easy to run a full Ubuntu enviro
 To install Ubuntu in Termux, run the following command in Termux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/TIS199/termux-ubuntu/main/ubuntu.sh | bash
+wget https://raw.githubusercontent.com/TIS199/termux-ubuntu/main/ubuntu.sh && chmod u+x ubuntu.sh && ./ubuntu.sh
 ```
-If you don't have curl installed then run this command first:
+If you don't have wget installed then run this command first:
 ```bash
-apt update && apt install curl -y
+apt update && apt install wget -y
