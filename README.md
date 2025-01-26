@@ -23,7 +23,7 @@ A script to install Ubuntu in Termux, making it easy to run a full Ubuntu enviro
 To install Ubuntu in Termux, run the following command in Termux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/your-username/ubuntu-in-termux/main/ubuntu.sh | bash
+curl -fsSL https://raw.githubusercontent.com/TIS199/termux-ubuntu/main/ubuntu.sh | bash
 ```
 If you don't have curl installed then run this command first:
 ```bash
